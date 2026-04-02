@@ -151,7 +151,7 @@ body {
 }
 
 .photos-list img {
-    height: 600px;
+    height: 400px;
     object-fit: cover;
     display: block;
     transition: 0.3s;
@@ -169,7 +169,7 @@ body {
     text-align: center;
     color: azure;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 50px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -183,12 +183,12 @@ body {
 
 .spec-item {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .spec-item1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     flex-basis: calc((100% - 32px) / 2);
 }
 
