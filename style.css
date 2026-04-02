@@ -46,7 +46,7 @@ body {
 .hero-title {
     color: azure;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
@@ -54,7 +54,7 @@ body {
 .hero-subtitle {
     color: rgb(245, 6, 6);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
@@ -62,7 +62,7 @@ body {
 .hero-text {
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
@@ -75,7 +75,7 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 5px;
@@ -98,15 +98,16 @@ body {
 }
 
 .advantages-container {
-    padding: 10px;
+    text-align: center;
 }
 
 
 .advantages-title {
     text-align: center;
+    margin-top: 10px;
     color: azure;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -117,6 +118,7 @@ body {
     list-style: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 0;
 }
 
 .adv-item {
@@ -129,13 +131,15 @@ body {
 
 .adv-text {
     margin: 15px 0px;
+    padding-bottom: 40px;
 }
 
 .photos-title {
     text-align: center;
     color: azure;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 65px;
+    padding-top: 30px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -165,13 +169,12 @@ body {
     text-align: center;
     color: azure;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .specs-list {
     display: flex;
-    justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
     list-style: none;
@@ -183,18 +186,34 @@ body {
     font-size: 30px;
 }
 
+.spec-item1 {
+    text-align: center;
+    font-size: 30px;
+    flex-basis: calc((100% - 32px) / 2);
+}
+
 .spec-title {
     margin-top: 15px;
     font-weight: bold;
 }
 
 .spec-item,
-.orr {
+.adv-item {
+    transition: 0.3s;
+}
+
+.spec-item1,
+.adv-item {
     transition: 0.3s;
 }
 
 .spec-item:hover,
-.orr:hover {
+.adv-item:hover {
+    transform: translateY(-10px);
+}
+
+.spec-item1:hover,
+.adv-item:hover {
     transform: translateY(-10px);
 }
 
@@ -216,19 +235,15 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 80px;
+    font-size: 50px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding-bottom: 70px;
 }
 
 .order-form {
     margin-bottom: 8px;
     position: relative;
-}
-
-.order-inputs {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
 }
 
 .order-input {
@@ -239,6 +254,7 @@ body {
     background-color: transparent;
     padding-left: 38px;
     outline: transparent;
+    margin-bottom: 15px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #ffffff;
     font-size: 20px;
@@ -254,7 +270,7 @@ body {
     padding: 5px;
     transition: 0.3s;
     display: block;
-    margin: 100px auto 0;
+    margin: 30px auto 0;
     box-shadow: 0 0 20px red;
 }
 

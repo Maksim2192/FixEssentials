@@ -180,6 +180,11 @@ body {
     font-size: 30px;
 }
 
+.spec-item1 {
+    text-align: center;
+    font-size: 30px;
+}
+
 .spec-title {
     margin-top: 15px;
     font-weight: bold;
@@ -190,7 +195,17 @@ body {
     transition: 0.3s;
 }
 
+.spec-item1,
+.orr {
+    transition: 0.3s;
+}
+
 .spec-item:hover,
+.orr:hover {
+    transform: translateY(-10px);
+}
+
+.spec-item1:hover,
 .orr:hover {
     transform: translateY(-10px);
 }
