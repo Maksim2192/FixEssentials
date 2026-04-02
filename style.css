@@ -1,0 +1,270 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+@media screen and (min-width: 1158px) {
+    
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url('./img/mototsiklist_mototsikl_zakat_121025_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-section>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+.fullpage-image {
+    width: 100%;
+    height: 1100px;
+    object-fit: cover;
+}
+
+.hero-title {
+    color: azure;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: rgb(245, 6, 6);
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.hero-text {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.btn-order {
+    display: inline-block;
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-order:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.advantages-section {
+    padding: 100px 0;
+    background-image: url('./img/1644680659_1-abrakadabra-fun-p-temno-serii-fon-dlya-prezentatsii-1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.advantages-container {
+    padding: 10px;
+}
+
+
+.advantages-title {
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.advantages-list {
+    font-size: 20px;
+    align-items: center;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.adv-item {
+    font-size: 30px;
+}
+
+.adv-title {
+    margin: 30px 0 0 0;
+}
+
+.adv-text {
+    margin: 15px 0px;
+}
+
+.photos-title {
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.photos-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.photos-list img {
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.photos-list img:hover {
+    transform: scale(1.05);
+}
+
+.photo-item {
+    margin-right: 100px;
+}
+
+.specs-title {
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.specs-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #fff;
+}
+
+.spec-item {
+    text-align: center;
+    font-size: 30px;
+}
+
+.spec-title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.spec-item,
+.orr {
+    transition: 0.3s;
+}
+
+.spec-item:hover,
+.orr:hover {
+    transform: translateY(-10px);
+}
+
+.spec-text {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.order-section {
+    padding: 100px 0;
+    background-image: url('./img/geometric-background-gradient-design_677411-4193.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.order-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.order-form {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.order-inputs {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.order-input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgba(89, 91, 128, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.order-btn {
+    color: rgb(252, 252, 252);
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+    display: block;
+    margin: 100px auto 0;
+    box-shadow: 0 0 20px red;
+}
+
+.order-btn:hover {
+    background: rgb(212, 7, 7);
+    transform: scale(1.05);
+    box-shadow: 0 0 40px red;
+}
+
+@media screen and (min-width: 768px) { 
+
+
+}
